@@ -1,0 +1,23 @@
+.switch {
+  position: relative;
+  cursor: pointer;
+  min-width: 200px;
+  min-height: 200px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.switch__background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  z-index: -1;
+}
+
+.switch__background_active {
+}
