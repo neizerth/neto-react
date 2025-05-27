@@ -3,15 +3,16 @@ import "./Heart.css";
 
 const inc = (x) => x + 1;
 
-export const Heart = () => {
+export const Heart = (props) => {
   const [count, setCount] = useState(0);
 
-  const increment = () => {
+  const onClick = () => {
+    props?.onLike();
     setCount(inc);
   };
 
   return (
-    <div className="heart" onClick={increment}>
+    <div className="heart" onClick={onClick}>
       {count}
     </div>
   );

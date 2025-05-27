@@ -6,7 +6,7 @@ import { Switch } from "./components/Switch/Switch";
 function App() {
   return (
     <>
-      <Heart />
+      <Heart onLike={() => console.log("like!!!")} />
       <HeartCC />
       <Switch />
     </>
