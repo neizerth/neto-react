@@ -1,0 +1,9 @@
+.date {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
