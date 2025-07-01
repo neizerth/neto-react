@@ -1,0 +1,1 @@
+Для данной лекции есть отдельный репозиторий https://github.com/neizerth/neto-react-router-200524
