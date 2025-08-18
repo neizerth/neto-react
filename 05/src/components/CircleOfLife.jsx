@@ -5,15 +5,13 @@ export class CircleOfLife extends Component {
     super(props);
     this.elementRef = React.createRef();
 
-    console.log("constructor");
-
-    console.log(this.elementRef);
+    console.log("CircleOfLife:constructor", this.elementRef, props);
   }
   componentDidMount() {
-    console.log("componentDidMount");
+    console.log("CircleOfLife:componentDidMount", this.elementRef);
   }
   render() {
-    console.log("render", Date(), this.elementRef);
+    console.log("CircleOfLife: render", Date(), this.elementRef);
 
     return (
       <div ref={this.elementRef} onClick={() => console.log(this.elementRef)}>

@@ -3,6 +3,7 @@ import { Component } from "react";
 export class HeartCC extends Component {
   state = {
     count: 0,
+    name: "Vladimir",
   };
 
   constructor(props) {

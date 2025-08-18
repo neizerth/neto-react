@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+
+}
+
+.actions {
+
+}
+
+.group {
+  display: flex;
+  gap: 5px;
+}
