@@ -1,0 +1,19 @@
+.label {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  display: none;
+}
+
+.control {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.input:checked + .control {
+  background: green;
+}
