@@ -11,7 +11,10 @@ export const likeSlice = createSlice({
       state.likes += value;
     },
     resetLikes(state) {
-      state.likes = 0;
+      return {
+        ...state,
+        likes: 0,
+      };
     },
   },
 });

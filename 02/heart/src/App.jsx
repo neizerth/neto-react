@@ -7,19 +7,24 @@ import { Switch } from "./components/Switch/Switch";
 import { EmojiList } from "./components/EmojiList/EmojiList";
 import { SimpleHeart } from "./components/SimpleHeart/SimpleHeart";
 import { StateHeart } from "./components/StateHeart/StateHeart";
+import { ProductSearch } from "./components/ProductSearch/ProductSearch";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
+      <ProductSearch />
+
       {/* <SimpleHeart /> */}
-      <StateHeart />
-      <Heart onLike={() => console.log("like!!!")} />
-      <HeartCC />
+      {/* <StateHeart /> */}
+      {/* <HeartCC /> */}
+      {/* <Heart onLike={() => console.log("like!!!")} /> */}
+      {/* <Heart onLike={() => console.log("like!!!")} />
+      
       <Switch />
       <StatelessHeart count={count} onLike={() => setCount((x) => x + 1)} />
-      <EmojiList />
+      <EmojiList /> */}
     </>
   );
 }

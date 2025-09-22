@@ -20,7 +20,7 @@ const data = {
 
 const config = {
   type: "pie",
-  data: data,
+  data,
 };
 
 export class PieChart extends Component {

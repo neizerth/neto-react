@@ -7,9 +7,9 @@ import { WindowSize } from "./components/WindowSize";
 function App() {
   return (
     <>
-      <Caluclator />
-      <CircleOfLife />
-      <PieChart />
+      {/* <Caluclator /> */}
+      {/* <CircleOfLife /> */}
+      {/* <PieChart /> */}
       <WindowSize />
     </>
   );

@@ -34,7 +34,7 @@ function App() {
   }, []);
 
   return (
-    <LanguageContext.Provider value={{ language: "en" }}>
+    <LanguageContext.Provider value={{ language: "ru" }}>
       <News data={news} />
       <Loader loading={loading} />
     </LanguageContext.Provider>

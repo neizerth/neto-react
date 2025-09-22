@@ -4,6 +4,7 @@ import { ColorSelect } from "./components/ColorSelect/ColorSelect";
 import { List } from "./components/List/List";
 import { RegisterFormModal } from "./components/RegisterFormModal/RegisterFormModal";
 import { FeedbackForm } from "./components/FeedbackForm/FeedbackForm";
+import { Sidebar } from "./components/Sidebar/Sidebar";
 
 function App() {
   const [color, setColor] = useState();
@@ -14,10 +15,11 @@ function App() {
   };
   return (
     <div className="app">
-      <FeedbackForm />
+      {/* <FeedbackForm /> */}
+      <Sidebar />
       {/* <RegisterFormModal /> */}
-      {/* <ColorSelect onSelect={onColorChange} value={color} />
-      <List marker="+">
+      {/* <ColorSelect onSelect={onColorChange} value={color} /> */}
+      {/* <List marker="+">
         <div>Мясо</div>
         <div>Колбаса</div>
         <div>Селёдка</div>
