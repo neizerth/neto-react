@@ -7,7 +7,7 @@ export function usePolling({ url, pollInterval }) {
   const loadNewsToState = useCallback(() => {
     setLoading(true);
 
-    fetch(url)
+    return fetch(url)
       .then((r) => r.json())
       .then((data) => {
         setData(data);
@@ -18,15 +18,14 @@ export function usePolling({ url, pollInterval }) {
   }, [url]);
 
   const step = useCallback(() => {
-    setTimeout(() => {
-      loadNewsToState();
+    setTimeout(async () => {
+      await loadNewsToState();
       step();
     }, pollInterval);
   }, [pollInterval, loadNewsToState]);
 
   useEffect(() => {
-    loadNewsToState();
-    step();
+    loadNewsToState().then(step);
   }, [loadNewsToState, step]);
 
   return {

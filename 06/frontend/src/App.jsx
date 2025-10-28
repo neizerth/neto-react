@@ -19,18 +19,16 @@ function App() {
       })
       .finally(() => {
         setLoading(false);
+
+        step();
       });
   };
   const step = () => {
-    setTimeout(() => {
-      loadNewsToState();
-      step();
-    }, 5000);
+    setTimeout(loadNewsToState, 5000);
   };
 
   useEffect(() => {
     loadNewsToState();
-    step();
   }, []);
 
   return (
