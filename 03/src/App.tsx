@@ -36,14 +36,14 @@ function App() {
   return (
     <>
       <DynamicTodoList tasks={tasks}/>
-      {/* <StatelessHeart count={count} onLike={() => setCount((x) => x + 1)} />
+      <StatelessHeart count={count} onLike={() => setCount((x) => x + 1)} />
       <Person name="Степан" lastName="Иванов" gender="male" />
       <Switch data={["Вкл", "Выкл"]} onToggle={onSwitchToggle} enabled />
       <PokemonData
         render={(data) =>
           data.map((pokemon) => <div key={pokemon.name}>{pokemon.name}</div>)
         }
-      /> */}
+      /> 
       <Content>Осторожно, злая собака!</Content>
     </>
   );

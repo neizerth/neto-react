@@ -15,8 +15,8 @@ function App() {
   };
   return (
     <div className="app">
-      {/* <FeedbackForm /> */}
-      <Sidebar />
+      <FeedbackForm />
+      {/* <Sidebar /> */}
       {/* <RegisterFormModal /> */}
       {/* <ColorSelect onSelect={onColorChange} value={color} /> */}
       {/* <List marker="+">

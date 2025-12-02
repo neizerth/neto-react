@@ -1,7 +1,10 @@
-import { useRef, useState } from "react";
+import { useId, useRef, useState } from "react";
 import S from "./FeedbackForm.module.css";
 
 export const FeedbackForm = () => {
+  const firstNameId = useId();
+  const cityId = useId();
+
   const onSubmit = (e) => {
     e.preventDefault();
     const { target } = e;
@@ -31,15 +34,21 @@ export const FeedbackForm = () => {
   return (
     <form className={S.container} onSubmit={onSubmit}>
       <div className={S.group}>
-        <label htmlFor="firstName" className={S.label}>
+        <label htmlFor={firstNameId} className={S.label}>
           Ваше имя
         </label>
 
         <input
           placeholder="Ваше имя"
           name="firstName"
+          id={firstNameId}
           value={firstName}
           // onChange={({ target }) => setFirstName(target.value)}
+        />
+        <input
+          placeholder="Ваша Фамилия"
+          name="lastName"
+          defaultValue="Языков"
         />
       </div>
       <div className={S.group}>
@@ -49,10 +58,10 @@ export const FeedbackForm = () => {
         </button>
       </div>
       <div className={S.group}>
-        <label htmlFor="city" className={S.label}>
+        <label htmlFor={cityId} className={S.label}>
           Город
         </label>
-        <select name="city">
+        <select name="city" id={cityId}>
           <option value={1}>Саратов</option>
           <option value={2}>Керчь</option>
           <option value={3}>Гомель</option>

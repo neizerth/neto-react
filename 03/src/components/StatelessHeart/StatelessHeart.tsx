@@ -1,6 +1,6 @@
 import "./StatelessHeart.css";
 
-type StatelessHeartProps = {
+interface StatelessHeartProps {
   count: number;
   onLike?: () => void;
 };
