@@ -17,8 +17,13 @@ export const likeSlice = createSlice({
       };
     },
   },
+  selectors: {
+    selectLikes: (state) => state.likes,
+  },
 });
 
 export const { addLikes, resetLikes } = likeSlice.actions;
+
+export const { selectLikes } = likeSlice.selectors;
 
 export default likeSlice.reducer;

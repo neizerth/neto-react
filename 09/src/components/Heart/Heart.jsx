@@ -1,12 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import S from "./Heart.module.css";
-import { addLikes, resetLikes } from "../../store/likeSlice";
+import { addLikes, resetLikes, selectLikes } from "../../store/likeSlice";
 
 export const Heart = () => {
   const dispatch = useDispatch();
-  const count = useSelector(({ likes }) => {
-    return likes.likes;
-  });
+  const count = useSelector(selectLikes);
 
   const onLike = () => {
     dispatch(addLikes());
