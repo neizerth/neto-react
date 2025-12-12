@@ -9,11 +9,11 @@ import { WindowSize } from "./components/WindowSize";
 function App() {
   return (
     <>
-      <CategoriesList />
+      {/* <CategoriesList /> */}
       {/* <Caluclator /> */}
       {/* <CircleOfLife /> */}
       {/* <PieChart /> */}
-      {/* <WindowSize /> */}
+      <WindowSize />
       {/* {<FnWindowSize />} */}
     </>
   );
