@@ -4,8 +4,8 @@ import { addLikes, resetLikes } from "../../store/actionCreators";
 
 export const Heart = () => {
   const dispatch = useDispatch();
-  const count = useSelector(({ likes }) => {
-    return likes.likes;
+  const count = useSelector((store) => {
+    return store.likes.likes;
   });
 
   const onLike = () => {

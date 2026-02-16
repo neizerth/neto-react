@@ -18,7 +18,7 @@ export function FnWindowSize() {
     updateWindowSize();
 
     return () => {
-      window.removeEventListener("resize", updateWindowSize);
+      setActive(false);
     }
   }, [])
 

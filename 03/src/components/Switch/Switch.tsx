@@ -12,7 +12,6 @@ type SwitchProps<T> = {
 
 export function Switch<T>({ data, onToggle, enabled = false }: SwitchProps<T>) {
   const [active, setActive] = useState(enabled);
-  const [user, setUser] = useState(null);
 
   const className = active ? "switch switch_active" : "switch";
 

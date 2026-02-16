@@ -14,17 +14,14 @@ function App() {
 
   return (
     <>
-      <ProductSearch />
+      {/* <ProductSearch /> */}
 
       {/* <SimpleHeart /> */}
       {/* <StateHeart /> */}
       {/* <HeartCC /> */}
       {/* <Heart onLike={() => console.log("like!!!")} /> */}
-      {/* <Heart onLike={() => console.log("like!!!")} />
-      
-      <Switch />
-      <StatelessHeart count={count} onLike={() => setCount((x) => x + 1)} />
-      <EmojiList /> */}
+      {/* <Switch /> */}
+      <EmojiList />
     </>
   );
 }
